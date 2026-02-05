@@ -1,0 +1,42 @@
+{
+  "name": "web",
+  "version": "0.0.1",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "lint:fix": "next lint --fix",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "catalog:",
+    "@repo/schemas": "workspace:*",
+    "@repo/db": "workspace:*",
+    "@repo/server": "workspace:*",
+    "@repo/store": "workspace:*",
+    "@tanstack/react-query": "catalog:",
+    "@workspace/ui": "workspace:*",
+    "hono": "catalog:",
+    "lucide-react": "catalog:",
+    "next": "catalog:",
+    "next-themes": "catalog:",
+    "react": "catalog:",
+    "react-dom":"catalog:",
+    "react-hook-form": "catalog:",
+    "recharts": "catalog:",
+    "zod":"catalog:"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.18",
+    "@types/node": "^25.1.0",
+    "@types/react": "^19.2.10",
+    "@types/react-dom": "^19.2.3",
+    "@workspace/eslint-config": "workspace:^",
+    "@workspace/typescript-config": "workspace:*",
+    "eslint": "^9.39.2",
+    "typescript": "^5.9.3"
+  }
+}

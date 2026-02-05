@@ -1,0 +1,27 @@
+{
+  "name": "@repo/server",
+  "type": "module",
+  "scripts": {
+    "dev": "pnpm exec tsx watch --env-file ../../.env src/index.ts",
+    "build": "tsc --noEmit && tsup",
+    "start": "node dist/index.js"
+  },
+  "exports":{
+    ".":"./src/index.ts"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.19.9",
+    "@repo/db": "workspace:*",
+    "@supabase/supabase-js": "^2.93.3",
+    "drizzle-orm": "catalog:",
+    "hono": "catalog:",
+    "postgres": "catalog:"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.31",
+    "drizzle-kit": "^0.31.8",
+    "tsup": "^8.5.1",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}
